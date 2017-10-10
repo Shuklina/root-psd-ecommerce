@@ -5,13 +5,40 @@ $(document).on('ready', function () {
 });
 
 $(document).ready(function(){
-$('.single-item').slick();
+$('.sidebar').slick({
+  dots: false,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        infinite: true,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        dots: true,
+        arrows: false
+      }
+    }
+  ]
+});
 });
 
 $(document).ready(function(){
 $('.responsive-boxes').slick({
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -22,21 +49,26 @@ $('.responsive-boxes').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: false
+        dots: true,
+        arrows: false
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
       }
     }
   ]
@@ -49,6 +81,7 @@ $(function() {
     $(".regular").slick({
       dots: false,
       infinite: false,
+      speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
         responsive: [
@@ -58,21 +91,26 @@ $(function() {
         slidesToShow: 4,
         slidesToScroll: 4,
         infinite: true,
-        dots: false
+        dots: true,
+        arrows: false
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
       }
     }
   ]
