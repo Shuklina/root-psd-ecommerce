@@ -1,20 +1,22 @@
 .footer-first {
   color: #b6b6b6;
   padding: 50px 15px;
+
   .footer-desc {
     font-size: 16px;
     line-height: 1.714;
     margin: 18px 0;
   }
 
-a {
+  a {
     color: #b6b6b6;
-    text-decoration: none;
     font-size: 16px;
+    text-decoration: none;
+
     &:hover {
       color: #f10e34;
     }
-}
+  }
 
   span {
     color: #f10e34;
@@ -43,7 +45,7 @@ a {
   a {
     color: #fff;
     text-decoration: none;
-}
+  }
 
   .footer-second-menu {
     padding: 40px 15px;

@@ -25,7 +25,6 @@ body {
 }
 
 $status-colors: (
-
   red: #f10e34,
   white: #fff,
   dark: #1f1e1e,
@@ -33,11 +32,8 @@ $status-colors: (
 );
 
 .bg {
-
   @each $status, $color in $status-colors {
-
     &-#{$status} {
-
       background: $color;
     }
   }
@@ -59,8 +55,7 @@ $status-colors: (
   border-radius: 0;
   margin-bottom: 0;
 
-  .navbar-toggle 
-  {
+  .navbar-toggle {
     margin: 30px 0;
   }
 }
@@ -94,11 +89,11 @@ $status-colors: (
 }
 
 .navbar-form .price-cart {
-  text-transform: uppercase;
   background: transparent;
   border: none;
   color: #fff;
   cursor: default;
+  text-transform: uppercase;
 }
 
 .navbar-custom li {
@@ -117,27 +112,27 @@ form {
   }
 
   .input-group {
-    width: auto;
     margin-right: 10px;
     margin-top: 10px;
+    width: auto;
   }
 }
 
 @media (max-width: 48em) {
-
   form .input-group {
-    width: 45%;
     margin-right: 10px;
     margin-top: 10px;
+    width: 45%;
   }
 }
+
 /* End Navbar */
 
 /* Start Jumbotron */
 
 .banner-bg {
-  margin-bottom: 20px;
   color: #fff;
+  margin-bottom: 20px;
 
   .jumbotron {
     background: url('../images/01.jpg') no-repeat;
@@ -213,15 +208,15 @@ form {
 /* End left menu */
 
 .product {
-  padding: 15px;
   margin-bottom: 20px;
+  padding: 15px;
 
   img {
     width: 100%;
   }
 
-  .slick-prev:before,
-  .slick-next:before {
+  .slick-prev::before,
+  .slick-next::before {
     color: red;
     font-family: 'slick';
     font-size: 20px;
@@ -258,12 +253,9 @@ form {
 }
 
 .siderbar-left {
-  padding: 20px;
   margin-bottom: 20px;
+  padding: 20px;
   position: relative;
-/*  width: 285px;
-  height: auto;
-  border: 3px solid #73AD21;*/
 
   img {
     width: 100%;
@@ -293,7 +285,8 @@ form {
       padding: 15px;
     }
   }
-    .slick-next:before {
+
+  .slick-next::before {
     color: red;
     font-family: 'slick';
     font-size: 20px;
@@ -301,7 +294,7 @@ form {
     opacity: 1;
   }
 
-  .slick-prev:before {
+  .slick-prev::before {
     color: red;
     font-family: 'slick';
     font-size: 20px;
@@ -310,38 +303,35 @@ form {
   }
 }
 
-
 @media (min-width: 48em) {
-
   .siderbar-left {
-  .slick-prev {
-    color: black;
-    left: 77%;
-  }
+    .slick-prev {
+      color: black;
+      left: 77%;
+    }
 
-  .slick-prev,
-  .slick-next {
-    right: 10px;
-    top: -16%;
+    .slick-prev,
+    .slick-next {
+      right: 10px;
+      top: -16%;
+    }
   }
-}
 }
 
 @media (min-width: 48em) {
-.product {
-  .slick-prev {
-    color: black;
-    left: 93%;
-  }
+  .product {
+    .slick-prev {
+      color: black;
+      left: 93%;
+    }
 
-  .slick-prev,
-  .slick-next {
-    right: 10px;
-    top: -18%;
+    .slick-prev,
+    .slick-next {
+      right: 10px;
+      top: -18%;
+    }
   }
 }
-}
-
 
 @mixin style($color, $font-size, $font-weight) {
   color: $color;
@@ -351,6 +341,7 @@ form {
 
 .product-title {
   @include style(#000, 21px, bold);
+
   margin-top: 10px;
 }
 
@@ -360,6 +351,7 @@ form {
 
 .product-price {
   @include style(#636363, 15px, normal);
+
   .discount {
     color: #000;
     font-weight: bold;
@@ -369,6 +361,7 @@ form {
 
 .full-width-banner {
   @include style(#000, 18px, 900);
+
   vertical-align: middle;
 
   .full-width--title {
@@ -421,4 +414,8 @@ form {
 
 .navbar-breand-top {
   height: 100px;
+}
+
+.banner-spaces {
+  margin-bottom: 20px;
 }

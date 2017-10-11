@@ -38,7 +38,7 @@ $('.sidebar').slick({
 $(document).ready(function(){
 $('.responsive-boxes').slick({
   dots: false,
-  infinite: true,
+  infinite: false,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
